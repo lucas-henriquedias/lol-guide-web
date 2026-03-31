@@ -1,53 +1,70 @@
 
+:root {
+    --color_first: #0a1429;
+    --color_second: #010A13;
+    --color_letters: #fff;
+    --color_letters_second: black;
+    --color_interaction: #C89B3C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 body {
-    margin: 0;      /*set the page margin, this case, to none, leaving everything in the size of the page.*/
-    background-color: #0a1429;  /*background's color*/
-    color: #ffffff;             /*page's text color*/
+    background-color: var(--color_first);
+    color: var(--color_letters);
 }
 
 header {
-    position: sticky;
-    top: 0;
+    padding: 10px 5%;
+    background-color: var(--color_second);
 }
 
-main {
-    max-width: 1000px;
-    margin: auto;
+@media screen and (min-width: 750px){
+    header {
+        position: sticky;
+        top: 0;
+    }
 }
 
-nav {
-    background-color: #010A13;
-    padding: 10px;                /*space between the content and border.*/
+.list_unordered {
+    list-style: none;
 }
 
-nav ul {    /*in this section, i just customize the unordered list and the space it occupies.*/
-    list-style: none;      /*this's to customizing "topics", but i prefer to remove it.*/
-    padding: 0;         /*remove the space the "o" occupies.*/
-    display: flex;      /*i say this element can to be modified*/
-    justify-content: center;
-}
-
-nav ul li {
-    display: inline;    /* leave each element in the same line.*/
-    margin-right: 50px;
-}
-
-nav a {
-    text-decoration: none;      /*remove any decoration, the underscore(_) in words*/
-    color: #F0E6D2;         /*set the color of the nav bar.*/
+/* revisar está parte da navbar*/
+.item_nav {
+    text-decoration: none;
     font-size: 20px;
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
 }
 
-nav a:hover {   /*The "hover" is used to set events about, in this case, the words contained in "a". */
-    color: #C89B3C;
+.item_nav:hover {
+    color: var(--color_interaction);
 }
 
 footer {
-    background-color: #010A13;
+    background-color: var(--color_second);
     text-align: center;
     padding: 20px;
 }
+
+.button_navbar {
+    color: var(--color_second);
+}
+
+
+
+
+
+
+
+/* 
 
 p, i {
     text-align: justify;
@@ -88,12 +105,12 @@ img {
 
 .banner {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/banner.jpg);
-    height: 300px;                  /*it sets height (altura).*/
-    background-size: cover;         /*it sets the size of the background images.*/
+    height: 300px;                  /*it sets height (altura).*
+    background-size: cover;         /*it sets the size of the background images.*
     background-position: center;
-    display: flex;                  /*"display" set how an element is rendered and positioned in the page.*/
-    justify-content: center;    /*(alinha) the items, in this case, in center. */
-    align-items: center;        /*this's same thing of (cima), but in vertical.*/
+    display: flex;                  /*"display" set how an element is rendered and positioned in the page.*
+    justify-content: center;    /*(alinha) the items, in this case, in center. *
+    align-items: center;        /*this's same thing of (cima), but in vertical.*
     flex-direction: column;
 }
 
