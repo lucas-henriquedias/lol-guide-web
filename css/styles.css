@@ -20,30 +20,40 @@ body {
 }
 
 header {
-    padding: 10px 5%;
+    padding: 5px 5%;
+    position: static;
     background-color: var(--color_second);
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 451px){
     header {
         position: sticky;
         top: 0;
     }
 }
 
-.list_unordered {
+.list_unordered {   /* analisar melhor se esses comandos realmente sao uteis. */
     list-style: none;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0; */
+
 }
 
 /* revisar está parte da navbar*/
 .item_nav {
     text-decoration: none;
+    color: var(--color_letters);
     font-size: 20px;
     display: flex;
     justify-content: space-around;
     flex-flow: column wrap;
 }
 
+/* interação ao passar ou clicar nas opções da navbar */
 .item_nav:hover {
     color: var(--color_interaction);
 }
@@ -58,9 +68,30 @@ footer {
     color: var(--color_second);
 }
 
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 1px black;
+}
 
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/banner.jpg);
+    height: 250px;                  
+    background-size: cover;   /*mantem a foto sem sofrer distorções */
+    background-position: center;
+    display: flex;                 
+    justify-content: center;    
+    align-items: center;        
+    flex-direction: column;
+}
 
-
+h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 1px 0.5px black;
+}
 
 
 
@@ -101,17 +132,6 @@ img {
     display: block;
     margin: auto;
     border-radius: 10px;
-}
-
-.banner {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/banner.jpg);
-    height: 300px;                  /*it sets height (altura).*
-    background-size: cover;         /*it sets the size of the background images.*
-    background-position: center;
-    display: flex;                  /*"display" set how an element is rendered and positioned in the page.*
-    justify-content: center;    /*(alinha) the items, in this case, in center. *
-    align-items: center;        /*this's same thing of (cima), but in vertical.*
-    flex-direction: column;
 }
 
 .banner h1, h2 {

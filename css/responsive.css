@@ -1,13 +1,6 @@
-
+/* 
 @media screen and (max-width: 480px) {
-    nav ul{                 /*after i have look this*/
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        margin: 20px 0;
-        padding: 0;
-    }
+  
 
     nav ul li {
         flex: 0 0 50%;
@@ -22,15 +15,5 @@
         margin: auto;
     }
 
-    h1 {
-        font-size: 40px;
-        text-shadow: 2px 2px 1px black;
-    }
 
-    h2 {
-        font-size: 30px;
-        padding: 20px;
-    }
-
-
-}
+} */
