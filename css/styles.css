@@ -30,19 +30,27 @@ body {
     display: flex;
     margin: 30px;
     gap: 20px;
+    list-style: none;
 }
 
 .item_nav {
+    color: var(--color_letters);
     text-decoration: none;
     font-size: 1.3rem;
     padding: 10px;
+}
+
+.item_nav:hover {
+    color: var(--color_interaction);
 }
 
 main {
     text-align: center;
 }
 
-
+h1 {
+    text-align: center;
+}
 
 footer {
     background-color: var(--color_second);
